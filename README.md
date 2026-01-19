@@ -47,6 +47,8 @@ pip install -r requirements.txt
 
 ```
 
+---
+
 # 🚀 Usage
 
 ## 1. Train the Model
@@ -63,6 +65,7 @@ insurance_model.pkl
 
 ```
 
+
 ## 2. Launch Gradio App
 Run the app to start the web interface:
 
@@ -74,6 +77,8 @@ python app.py
 Localhost link will appear (e.g., http://127.0.0.1:7860).
 If share=True is enabled, a temporary public link will be generated.
 
+
+---
 
 # 📊 Example Input
 
@@ -88,6 +93,9 @@ Age	Sex	BMI	Children	Smoker	Region
 ```
 Predicted Insurance Cost: ~36,000
 ```
+
+---
+
 
 # 🌐 Deployment on Hugging Face Spaces
 
@@ -113,6 +121,9 @@ gradio
 (Replace your-username with your Hugging Face username after deployment.)
 
 
+---
+
+
 # 📈 Evaluation Metrics
 
 - R² Score: Measures goodness of fit.
@@ -122,11 +133,16 @@ gradio
 - RMSE: Root Mean Squared Error.
 
 
+---
+
+
 # 🙌 Acknowledgements
 - Dataset: Kaggle - Medical Insurance Dataset
 
 - Libraries: Scikit-learn, Pandas, NumPy, Gradio
 
+
+---
 
 # 👨‍💻 Author
 Developed by **Rubina Begum**
