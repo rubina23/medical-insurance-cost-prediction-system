@@ -39,12 +39,9 @@ Clone the repository:
 git clone https://github.com/your-username/medical-insurance-prediction.git
 cd medical-insurance-prediction
 
----
-
 ```
 Install dependencies:
 ```
----
 
 pip install -r requirements.txt
 
