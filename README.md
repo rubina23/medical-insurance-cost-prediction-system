@@ -83,6 +83,12 @@ If share=True is enabled, a temporary public link will be generated.
 # 📊 Example Input
 
 ```
+| Age | Sex   | BMI  | Children | Smoker | Region    |
+|-----|-------|------|----------|--------|-----------|
+| 30  | male  | 35.3 | 0        | yes    | southwest |
+| 45  | female| 28.1 | 2        | no     | northeast |
+
+
 Age	Sex	BMI	Children	Smoker	Region
 30	male	35.3	0	yes	southwest
 
@@ -137,9 +143,9 @@ gradio
 
 
 # 🙌 Acknowledgements
-- Dataset: Kaggle - Medical Insurance Dataset
+- **Dataset:** Kaggle - Medical Insurance Dataset
 
-- Libraries: Scikit-learn, Pandas, NumPy, Gradio
+- **Libraries:** Scikit-learn, Pandas, NumPy, Gradio
 
 
 ---
