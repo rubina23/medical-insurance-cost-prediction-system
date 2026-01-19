@@ -20,11 +20,11 @@ This project integrates **data preprocessing, feature engineering, model trainin
 
 ```
 
-├── insurance.csv               # Dataset
-├── insurance_train.py          # Training script (preprocessing, training, evaluation, save model)
+├── insurance.csv                # Dataset
+├── insurance_train.py           # Training script (preprocessing, training, evaluation, save model)
 ├── app.py                       # Gradio app for prediction
 ├── requirements.txt             # Dependencies
-├── insurance_model.pkl  
+├── insurance_model.pkl          # Saved trained ML pipeline
 └── README.md                    # Project documentation
 
 ```
@@ -39,13 +39,16 @@ git clone https://github.com/your-username/medical-insurance-prediction.git
 cd medical-insurance-prediction
 
 
-Install dependencies:
+### Install dependencies:
+
 pip install -r requirements.txt
+
 
 
 🚀 Usage
 1. Train the Model
 Run the training script to preprocess data, train the model, and save the pipeline:
 
+```bash
 python insurance_train.py
 
