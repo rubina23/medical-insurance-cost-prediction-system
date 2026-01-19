@@ -99,13 +99,13 @@ Predicted Insurance Cost: ~36,000
 
 # 🌐 Deployment on Hugging Face Spaces
 
-- Push your repository to GitHub.
+1. Push your repository to GitHub.
 
-- Connect Hugging Face account with GitHub.
+2. Connect Hugging Face account with GitHub.
 
-- Create a new Space → Select Gradio as SDK.
+3. Create a new Space → Select Gradio as SDK.
 
-- Add requirements.txt with dependencies:
+4. Add requirements.txt with dependencies:
 
 ```
 pandas
@@ -115,7 +115,7 @@ gradio
 
 ```
 
-- Deploy and get a public URL.
+5. Deploy and get a public URL.
 
 👉 Live Demo: Medical Insurance Cost Predictor on Hugging Face Spaces (huggingface.co in Bing)  
 (Replace your-username with your Hugging Face username after deployment.)
@@ -145,5 +145,6 @@ gradio
 ---
 
 # 👨‍💻 Author
-Developed by **Rubina Begum**
+Developed by **Rubina Begum**  
+
 Feel free to contribute or suggest improvements!
