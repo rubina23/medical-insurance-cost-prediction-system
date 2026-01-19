@@ -118,8 +118,7 @@ gradio
 
 5. Deploy and get a public URL.
 
-👉 Live Demo: Medical Insurance Cost Predictor on Hugging Face Spaces (huggingface.co in Bing)  
-(Replace your-username with your Hugging Face username after deployment.)
+👉 Live Demo: Medical Insurance Cost Predictor on Hugging Face Spaces: https://huggingface.co/spaces/rubina25/Medical-Insurance-Cost-Prediction-System
 
 
 ---
