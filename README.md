@@ -29,6 +29,7 @@ This project integrates **data preprocessing, feature engineering, model trainin
 
 ```
 
+
 ---
 
 ## ⚙️ Installation
@@ -39,16 +40,4 @@ git clone https://github.com/your-username/medical-insurance-prediction.git
 cd medical-insurance-prediction
 
 
-### Install dependencies:
-
-pip install -r requirements.txt
-
-
-
-🚀 Usage
-1. Train the Model
-Run the training script to preprocess data, train the model, and save the pipeline:
-
-```bash
-python insurance_train.py
 
