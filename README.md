@@ -34,7 +34,7 @@ This project integrates **data preprocessing, feature engineering, model trainin
 
 ## ⚙️ Installation
 
-Clone the repository:
+**Clone the repository:**
 ```bash
 git clone https://github.com/your-username/medical-insurance-prediction.git
 cd medical-insurance-prediction
