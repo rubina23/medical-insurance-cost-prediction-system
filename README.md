@@ -40,79 +40,94 @@ git clone https://github.com/your-username/medical-insurance-prediction.git
 cd medical-insurance-prediction
 
 ```
+
 **Install dependencies:**
 ```
-
 pip install -r requirements.txt
 
 ```
+
 # 🚀 Usage
 
 ## 1. Train the Model
 Run the training script to preprocess data, train the model, and save the pipeline:
+
 ```
 python insurance_train.py
 
 ```
 This will generate a file:
-```
 
+```
 insurance_model.pkl
 
 ```
+
 ## 2. Launch Gradio App
 Run the app to start the web interface:
+
 ```
 python app.py
 
+```
 
 Localhost link will appear (e.g., http://127.0.0.1:7860).
 If share=True is enabled, a temporary public link will be generated.
 
 
-📊 Example Input
+# 📊 Example Input
+
+```
 Age	Sex	BMI	Children	Smoker	Region
 30	male	35.3	0	yes	southwest
 
+```
 
-Example Output
+**Example Output**
 
+```
 Predicted Insurance Cost: ~36,000
+```
 
+# 🌐 Deployment on Hugging Face Spaces
 
-🌐 Deployment on Hugging Face Spaces
-Push your repository to GitHub.
+- Push your repository to GitHub.
 
-Connect Hugging Face account with GitHub.
+- Connect Hugging Face account with GitHub.
 
-Create a new Space → Select Gradio as SDK.
+- Create a new Space → Select Gradio as SDK.
 
-Add requirements.txt with dependencies:
+- Add requirements.txt with dependencies:
 
+```
 pandas
 numpy
 scikit-learn
 gradio
 
+```
 
-Deploy and get a public URL.
+- Deploy and get a public URL.
 
 👉 Live Demo: Medical Insurance Cost Predictor on Hugging Face Spaces (huggingface.co in Bing)  
 (Replace your-username with your Hugging Face username after deployment.)
 
-📈 Evaluation Metrics
-R² Score: Measures goodness of fit.
 
-MSE: Mean Squared Error.
+# 📈 Evaluation Metrics
 
-RMSE: Root Mean Squared Error.
+- R² Score: Measures goodness of fit.
 
-🙌 Acknowledgements
-Dataset: Kaggle - Medical Insurance Dataset
+- MSE: Mean Squared Error.
 
-Libraries: Scikit-learn, Pandas, NumPy, Gradio
+- RMSE: Root Mean Squared Error.
 
 
-👨‍💻 Author
-Developed by Your Name  
+# 🙌 Acknowledgements
+- Dataset: Kaggle - Medical Insurance Dataset
+
+- Libraries: Scikit-learn, Pandas, NumPy, Gradio
+
+
+# 👨‍💻 Author
+Developed by **Rubina Begum**
 Feel free to contribute or suggest improvements!
