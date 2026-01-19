@@ -40,26 +40,29 @@ git clone https://github.com/your-username/medical-insurance-prediction.git
 cd medical-insurance-prediction
 
 ```
-Install dependencies:
+**Install dependencies:**
 ```
 
 pip install -r requirements.txt
 
+```
+# 🚀 Usage
 
-🚀 Usage
-1. Train the Model
+## 1. Train the Model
 Run the training script to preprocess data, train the model, and save the pipeline:
-
+```
 python insurance_train.py
 
+```
 This will generate a file:
+```
 
 insurance_model.pkl
 
-
-2. Launch Gradio App
+```
+## 2. Launch Gradio App
 Run the app to start the web interface:
-
+```
 python app.py
 
 
