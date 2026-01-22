@@ -1,19 +1,12 @@
 
-
-## **10. Web Interface with Gradio (10 Marks)**
-
-#Create a user-friendly Gradio web interface that takes user inputs and displays the prediction from your trained model.
-
+## Web Interface with Gradio
 
 import gradio as gr
 import pandas as pd
 import pickle
 
-
-
 with open("insurance_model.pkl", "rb") as f:
     pipeline = pickle.load(f)
-
 
 # Prediction function
 def predict_cost(age, sex, bmi, children, smoker, region):
@@ -39,8 +32,7 @@ def predict_cost(age, sex, bmi, children, smoker, region):
     })
     return pipeline.predict(input_df)[0]
 
-
-demo = gr.Interface(
+insurance_app = gr.Interface(
     fn=predict_cost,
     inputs=[
         gr.Number(label="Age"),
@@ -55,10 +47,4 @@ demo = gr.Interface(
     description="Enter your details to predict your medical insurance cost."
 )
 
-demo.launch(share=True)
-
-"""## **11. Deployment to Hugging Face (10 Marks)**
-
-Hugging Face Spaces public URL:
-
-"""
+insurance_app.launch(share=True)
