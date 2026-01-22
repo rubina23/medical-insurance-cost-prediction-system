@@ -2,9 +2,7 @@
 
 # Steps:
 
-##**1. Data Loading (5 Marks)**
-#Load the chosen dataset into your environment and display the first few rows along with the shape to verify correctness.
-
+##**1. Data Loading**
 
 import pandas as pd
 import numpy as np
@@ -18,7 +16,6 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score
 
 
-
 # Dataset load
 df = pd.read_csv("insurance.csv")
 
@@ -26,9 +23,7 @@ df = pd.read_csv("insurance.csv")
 print(df.head())
 print("Dataset shape:", df.shape)
 
-"""## **2. Data Preprocessing (10 Marks)**
-Perform and document at least 5 distinct preprocessing steps (e.g., handling missing values, encoding, scaling, outlier detection, feature engineering).
-"""
+## **2. Data Preprocessing**
 
 # 1. Check Missing Values
 print(df.isnull().sum())
@@ -73,34 +68,20 @@ pipeline = Pipeline([
     ('model', RandomForestRegressor(random_state=42))
 ])
 
-"""## **4. Primary Model Selection (5 Marks)**
-Choose a suitable algorithm and justify why this specific model was selected for the dataset.    
-
-**Answer:** Random Forest Regressor chosen because:
-*   Handles non-linear relationships.
-*   Robust to outliers.
-*   Works well with mixed feature types (numeric + categorical).
-
-## **5. Model Training (10 Marks)**
-Train your selected model using the training portion of your dataset.
-"""
+## **5. Model Training**
 
 # Train the pipeline on the training data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 pipeline.fit(X_train, y_train)
 
-"""## **6. Cross-Validation (10 Marks)**
-Apply Cross-Validation  to assess robustness and report the average score with standard deviation.
-"""
+## **6. Cross-Validation (10 Marks)**
 
 # Apply 5-fold cross-validation on the training set
 scores = cross_val_score(pipeline, X, y, cv=5, scoring="r2")
 print("CV Mean:", scores.mean())
 print("CV Std:", scores.std())
 
-"""## **7. Hyperparameter Tuning (10 Marks)**
-Optimize your model using search methods displaying both the parameters tested and the best results found.
-"""
+## **7. Hyperparameter Tuning**
 
 param_grid = {
     "model__n_estimators": [100, 200],
@@ -114,9 +95,7 @@ grid.fit(X_train, y_train)
 print("Best Params:", grid.best_params_)
 print("Best Score:", grid.best_score_)
 
-"""## **8. Best Model Selection (10 Marks)**
-Select  the final best-performing model based on the hyperparameter tuning results.
-"""
+## **8. Best Model Selection**
 
 # Select the best model from GridSearchCV
 best_model = grid.best_estimator_
@@ -124,9 +103,7 @@ best_model = grid.best_estimator_
 # Display the chosen configuration
 print("Final Best Model:", best_model)
 
-"""## **9. Model Performance Evaluation (10 Marks)**
-Evaluate the model on the test set and print comprehensive metrics suitable for the problem type.
-"""
+## **9. Model Performance Evaluation**
 
 # Predict on the test set
 y_pred = best_model.predict(X_test)
@@ -137,9 +114,8 @@ print("MSE:", mean_squared_error(y_test, y_pred))
 print("RMSE:", np.sqrt(mean_squared_error(y_test, y_pred)))
 # print("RMSE:", mean_squared_error(y_test, y_pred, squared=False))
 
-"""## **Save & Load Model**"""
+## **Save Model**
 
-# Save the pipeline instead of only model
 import pickle
 with open("insurance_model.pkl", "wb") as f:
     pickle.dump(grid.best_estimator_, f)
