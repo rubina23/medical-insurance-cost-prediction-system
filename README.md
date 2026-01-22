@@ -80,7 +80,7 @@ If share=True is enabled, a temporary public link will be generated.
 
 ---
 
-# 📊 Example Input
+# 📊 Example Input & Output
 
 
 | Age | Sex   | BMI  | Children | Smoker | Region    |Charges     |
@@ -88,12 +88,6 @@ If share=True is enabled, a temporary public link will be generated.
 | 30  | male  | 35.3 | 0        | yes    | southwest | 34245.27827|
 | 45  | female| 28.1 | 2        | no     | northeast | 9029.683712|
 
-
-**Example Output**
-
-```
-Predicted Insurance Cost: ~36,000
-```
 
 ---
 
